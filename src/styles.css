@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: orangered;
+    button{
+        color:orangered;
+        background-color: white;
+        border: none;
+    }
+    border-bottom: 2px solid blue;
+    height: 5rem;
+}
+.content{
+    padding: 0 6rem;
+}
+.homePage{
+    display: flex;
+    flex-direction: column;
+    gap:10rem;
+}
+.heroSection{
+    display: flex;
+    justify-content: space-around;
+    img{
+        height:30rem;
+        width:auto;
+        background-image: url("images/pepiPizza.png");
+        background-size: 30rem 30rem;
+        border:2px solid black;
+    }
+    .heroContent{
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+    }
+}
+.dishesSection{
+    .dishes{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3,minmax(25rem,1fr));
+        gap: 2rem;
+        .dish{
+            height: 30rem;
+            border:2px solid brown;
+        }
+    }
+}
+.cardsSection{
+    display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3,minmax(8rem,1fr));
+        gap:1rem;
+    .card{
+        height: 15rem;
+        border: 2px solid yellowgreen;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.menuSection{
+    .menuItems{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+        gap:2rem;
+        .menuItem{
+            border: 2px solid red;
+            height: 35rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 70%;
+                height: 70%;
+
+            }
+        }
+    }
+}
+.stars{
+    color:gold;
+}

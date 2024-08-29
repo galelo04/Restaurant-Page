@@ -1,0 +1,54 @@
+ <div class="heroSection">
+            <div class="heroImg">
+            </div>
+            <div class="priceTag"></div>
+            <div class="heroContent">
+                <div class="mainHeadline">Fresh, Flavorful and Fun at Italianno</div>
+                <div class="textDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima aperiam ea vel?</div>
+                <button class="orderBtn">Order Now</button>
+            </div>
+        </div>
+        <div class="bestSellers">
+            <div class="title">
+                <h2>Best Sellers</h2>
+            </div>
+            <div class="dishes">
+                <div class="dish">
+                    <div class="dishImg"></div>
+                    <div class="dishTitle"></div>
+                    <div class="rating"></div>
+                    <div class="price"></div>
+                </div>
+                <div class="dish">
+                    <div class="dishImg"></div>
+                    <div class="dishTitle"></div>
+                    <div class="rating"></div>
+                    <div class="price"></div>
+                </div>
+                <div class="dish">
+                    <div class="dishImg"></div>
+                    <div class="dishTitle"></div>
+                    <div class="rating"></div>
+                    <div class="price"></div>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+        <div class="menu">
+            <div class="title">Menu</div>
+            <div class="menuItems">
+                <div class="menuItem"></div>
+                <div class="menuItem"></div>
+                <div class="menuItem"></div>
+                <div class="menuItem"></div>
+                <div class="menuItem"></div>
+                <div class="menuItem"></div>
+                <div class="menuItem"></div>
+                <div class="menuItem"></div>
+                <div class="menuItem">
+            </div></div>
+        </div>
