@@ -20,7 +20,7 @@ const index = (function(){
                 content.innerHTML = "";
                 content.appendChild(home.loadDOM());
             }
-            else if(event.target.id==="menuBtn"){
+            else if(event.target.id==="menuBtn" || event.target.id==="gradText"){
                 content.innerHTML = "";
                 content.appendChild( menu.loadDOM());
             }

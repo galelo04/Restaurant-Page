@@ -1,22 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: Roboto,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 header{
     display: flex;
     justify-content: space-between;
-    background-color: white;
-    color: orangered;
-    button{
-        color:orangered;
-        background-color: white;
-        border: none;
-    }
-    border-bottom: 2px solid blue;
     height: 5rem;
+    background-color: white;
+    .logo{
+        display: flex;
+        .logoTitle{
+            align-self: center;
+            font-size: 4rem;
+
+            font-family: "Dancing Script", cursive;
+        }
+        .logoImg{
+            height:100%;
+            width: 5rem;
+            background-image: url("images/vecteezy_italian-food-vector-logo-design-illustration-italian_17048556-removebg-preview.png");
+            background-size: 100% 100%;
+        }
+    }
+
+    button{
+        border: none;
+        color:white;
+        height: 100%;
+        padding:0 3rem;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    #homeBtn{
+        background-color: green;
+    }
+    #menuBtn{
+        background-color:white;
+        color:red;
+    }
+    #aboutBtn{
+        background-color: red;
+    }
+    .gradText{
+        background: linear-gradient(to right, green,whitesmoke, red);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+footer{
+    height: 5rem;
+    background-color: rgb(24, 23, 23);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    a{
+        text-decoration: none;
+        color:white;
+    }
 }
 .content{
     padding: 0 6rem;
+    margin-bottom: auto;
 }
 .homePage{
     display: flex;
@@ -26,28 +80,76 @@ header{
 .heroSection{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    .backImg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: .2;
+        background-image: url("images/OIP.jpeg");
+        background-size: 100%;
+        z-index: -1;
+        /* opacity: .4; */
+    }
     img{
-        height:30rem;
+        height:34rem;
         width:auto;
-        background-image: url("images/pepiPizza.png");
+        background-image: url("images/pepiPizza.png") no-repeat;
         background-size: 30rem 30rem;
-        border:2px solid black;
     }
     .heroContent{
         display: flex;
         flex-direction: column;
+        align-items: start;
+        gap:2rem;
         width: 30rem;
+        .mainHeadline{
+            font-size: 5rem;
+            font-weight: bold;
+            color:red;
+        }
+        button{
+            border: none;
+            padding:1rem 2rem;
+            border-radius: 1rem;
+            background-color: gold;
+            font-size: 1rem;
+            font-weight: bold;
+        }
     }
 }
 .dishesSection{
+    h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: green;
+        text-align: center;
+    }
     .dishes{
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(3,minmax(25rem,1fr));
         gap: 2rem;
         .dish{
-            height: 30rem;
-            border:2px solid brown;
+            .title{
+                font-size: 2.5rem;
+                font-family:"Dancing Script", cursive;
+            }
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            background-color: white;
+            height: 25rem;
+            border-radius: 0.625rem; 
+            box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+            img{
+                width: 100%;
+                height:80%;
+                border-bottom-left-radius: .625rem;
+                border-bottom-right-radius: .625rem;
+            }
         }
     }
 }
@@ -58,33 +160,128 @@ header{
         gap:1rem;
     .card{
         height: 15rem;
-        border: 2px solid yellowgreen;
+        background-color: black;
+        border-radius: 0.625rem; 
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
         img{
             width: 100%;
             height: 100%;
+            opacity: .4;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .info-content {
+            position: absolute;
+            bottom: 1rem; 
+            left: 1rem; 
+            right: 1rem; 
+            color: white;
+            text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.5); 
+            font-family: Arial, sans-serif;
+        }
+        .info-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom:0.5rem; 
+        }
+        .info-description {
+            font-size: 1rem; /* Adjusted from 16px */
+            margin-bottom: 1rem; /* Adjusted from 16px */
+        }
+        .info-link {
+            font-size: 1rem; /* Adjusted from 16px */
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-bottom: 0.125rem solid white; /* Adjusted from 2px */
+            transition: opacity 0.3s ease; /* Adds a smooth transition effect */
+        }
+          
+        .info-link:hover {
+            opacity: 0.7; /* Changes opacity on hover for visual feedback */
         }
     }
 }
 
 .menuSection{
+    .headline{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: red;
+        text-align: center;
+    }
+    .title{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
     .menuItems{
         display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
         gap:2rem;
-        .menuItem{
-            border: 2px solid red;
-            height: 35rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            img{
-                width: 70%;
-                height: 70%;
+        & > *{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+            gap:2rem;
+            .menuItem{
+                position: relative;
+                background-color: lightgray;
+                height: 35rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 0.625rem; 
+                box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+                .dishName{
+                    font-family: "Dancing Script", cursive;
+                    font-size: 3rem;
 
+                }
+                button{
+                    border: none;
+                    padding:1rem 2rem;
+                    border-radius: 1rem;
+                    background-color: gold;
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+                img{
+                    width: 100%;
+                    height: 70%;
+
+                }
+                .dishPrice{
+                    position: absolute;
+                    background-color: gold;
+                    color:white;
+                    top:1rem;
+                    right:1rem;
+                    padding: .25rem .5rem;
+                }
             }
         }
     }
 }
+
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    .title{
+        font-size: 4rem;
+    }
+    .quote{
+        /* background-color: lightgray; */
+        padding:2rem;
+        border-radius: 1rem;
+        width:50%;
+        font-size: 1.5rem;
+    }
+}
 .stars{
     color:gold;
+    font-size: 2rem;
+    font-weight: bold;
 }

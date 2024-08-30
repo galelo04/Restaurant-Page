@@ -1,4 +1,4 @@
-import img from "../images/pizza1.jpg"
+import img from "../images/pepiPizza.png"
 
 const hero = (function(){
     const loadDOM = ()=>{
@@ -6,7 +6,7 @@ const hero = (function(){
         heroSection.classList.add("heroSection");
         
         heroSection.innerHTML = ` <div class="heroImg">
-            </div>
+            </div><div class= "backImg"></div>
             <div class="priceTag"></div>
             <div class="heroContent">
                 <div class="mainHeadline">Fresh, Flavorful and Fun at Italianno</div>
